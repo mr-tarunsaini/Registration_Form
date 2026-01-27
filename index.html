@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div  aria-label="logo" class="logo">
+                <a href="index.html">
+                    <i class='bx  bx-book-open'></i> 
+                    <h3>Alpha Study</h3>
+                </a>
+            </div>
+            <div class="nav-option">
+                <a href="index.html" class="hideonmobile">Home</a>
+                <a href="#" class="hideonmobile">About Us</a>
+                <a href="#" class="hideonmobile">Contact Us</a>
+                <button class="btn hideonmobile" >Register</button>                
+                <span onclick=showsidebar()><a href="#" class="menu-open-icon"><i class='bx  bx-menu' style="font-size: 2rem;"></i></a></span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <span onclick=hidesidebar()><a href="#"><i class='bx  bx-x' style="font-size: 2rem;"></i> </i></a></span>
+            <div  aria-label="logo" class="sidebar-logo">
+                <a href="index.html">
+                    <i class='bx  bx-book-open'></i>
+                    <h3>Alpha Study</h3>
+                </a>
+            </div>
+            <div class="sidebar-option">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="registration-form">
+            <h2>Registration form</h2>
+            <div class="details">
+                <div class="input-box name">
+                    <p>Name :</p>
+                    <input type = "text" name="name" placeholder = "Name">
+                    <i class='bx  bx-user' aria-label="user-name"></i>
+                </div>
+                <div class="input-box fname">
+                    <p>Father's Name :</p>
+                    <input type = "text" name="fname" class="large" placeholder = "Father's name">
+                    <input type = "text" name="fname" class="small" placeholder = "F name">
+                    <i class='bx  bx-user'></i>
+                </div>
+                <div class="input-box mname">
+                    <p>Mother's Name :</p>
+                    <input type = "text" name="mname" class="large" placeholder = "Mother's name">
+                    <input type = "text" name="mname" class="small" placeholder = "M name">
+                    <i class='bx  bx-user'></i>
+                </div>
+                <div class="input-box dob">
+                    <p>D O B :</p>
+                    <input type = "date" name="dob" min="2000-01-01" placeholder = "Date of Birth" required>
+                </div>
+                <div class="input-box email">
+                    <p>Email :</p>
+                    <input type = "email" name="user-email" placeholder = "Email">
+                    <i class='bx  bx-envelope'></i>
+                </div>
+                <div class="input-box Course">
+                    <p>Course :</p>
+                    <select id="Course">
+                        <option value = "1"> </option>
+                        <option value = "B.Tech.">B.Tech</option>
+                        <option value = "M.Tech">M.Tech</option>
+                        <option value = "B.sc">B.sc</option>
+                        <option value = "BBA">BBA</option>
+                        <option value = "B.Pharma">B.Pharma</option>
+                    </select>  
+                </div>
+                <div class="check-box">
+                    <input type = "checkbox" name="checkbox" >
+                    <p>Remember Me</p>
+                </div>
+            </div>
+
+            <div class="submit-btn">
+                <a href="index.html"><button onclick=thankmsg() name="submitbtn">Submit</button></a>
+            </div>   
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
