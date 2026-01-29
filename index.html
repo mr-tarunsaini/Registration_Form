@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Registration Page</title>
+
+    <!-- Linking with boxicon Website (For Icons) -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Linking the html file with CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Body -->
 <body>
+
+    <!-- Header  -->
     <header>
+
+        <!-- Navbar -->
         <div class="navbar">
+
+            <!-- Navbar Logo -->
             <div  aria-label="logo" class="logo">
                 <a href="index.html">
                     <i class='bx  bx-book-open'></i> 
                     <h3>Alpha Study</h3>
                 </a>
             </div>
+
+            <!-- Navbar Options -->
             <div class="nav-option">
                 <a href="index.html" class="hideonmobile">Home</a>
                 <a href="#" class="hideonmobile">About Us</a>
@@ -24,14 +38,20 @@
                 <span onclick=showsidebar()><a href="#" class="menu-open-icon"><i class='bx  bx-menu' style="font-size: 2rem;"></i></a></span>
             </div>
         </div>
+
+        <!-- SideBar -->
         <div class="sidebar">
             <span onclick=hidesidebar()><a href="#"><i class='bx  bx-x' style="font-size: 2rem;"></i> </i></a></span>
+
+            <!-- Sidebar Logo -->
             <div  aria-label="logo" class="sidebar-logo">
                 <a href="index.html">
                     <i class='bx  bx-book-open'></i>
                     <h3>Alpha Study</h3>
                 </a>
             </div>
+
+            <!-- Sidebar Options -->
             <div class="sidebar-option">
                 <a href="index.html">Home</a>
                 <a href="#">About Us</a>
@@ -41,37 +61,55 @@
         </div>
     </header>
 
-
+    <!-- Main -->
     <main>
+
+        <!-- Registration Form -->
         <div class="registration-form">
+
+            <!-- Heading -->
             <h2>Registration form</h2>
+
+            <!-- Details -->
             <div class="details">
+
+                <!-- Name -->
                 <div class="input-box name">
                     <p>Name :</p>
-                    <input type = "text" name="name" placeholder = "Name">
+                    <input type = "text" id="name" placeholder = "Name">
                     <i class='bx  bx-user' aria-label="user-name"></i>
                 </div>
+
+                <!-- Father's Name -->
                 <div class="input-box fname">
                     <p>Father's Name :</p>
-                    <input type = "text" name="fname" class="large" placeholder = "Father's name">
-                    <input type = "text" name="fname" class="small" placeholder = "F name">
+                    <input type = "text" id="fname" class="large" placeholder = "Father's name">
+                    <input type = "text" id="fname" class="small" placeholder = "F name">
                     <i class='bx  bx-user'></i>
                 </div>
+
+                <!-- Mother's Name -->
                 <div class="input-box mname">
                     <p>Mother's Name :</p>
-                    <input type = "text" name="mname" class="large" placeholder = "Mother's name">
-                    <input type = "text" name="mname" class="small" placeholder = "M name">
+                    <input type = "text" id="mname" class="large" placeholder = "Mother's name">
+                    <input type = "text" id="mname" class="small" placeholder = "M name">
                     <i class='bx  bx-user'></i>
                 </div>
+
+                <!-- Date of Birth -->
                 <div class="input-box dob">
                     <p>D O B :</p>
-                    <input type = "date" name="dob" min="2000-01-01" placeholder = "Date of Birth" required>
+                    <input type = "date" id="dob" min="2000-01-01" placeholder = "Date of Birth" required>
                 </div>
+
+                <!-- Email -->
                 <div class="input-box email">
                     <p>Email :</p>
-                    <input type = "email" name="user-email" placeholder = "Email">
+                    <input type = "email" id="user-email" placeholder = "Email">
                     <i class='bx  bx-envelope'></i>
                 </div>
+
+                <!-- Course -->
                 <div class="input-box Course">
                     <p>Course :</p>
                     <select id="Course">
@@ -83,17 +121,22 @@
                         <option value = "B.Pharma">B.Pharma</option>
                     </select>  
                 </div>
+
+                <!-- Check Box -->
                 <div class="check-box">
-                    <input type = "checkbox" name="checkbox" >
+                    <input type = "checkbox" id="checkbox" >
                     <p>Remember Me</p>
                 </div>
             </div>
 
-            <div class="submit-btn">
+            <!-- Submit Box -->
+            <div class="submit-btn" aria-labelledby="Submit">
                 <a href="index.html"><button onclick=thankmsg() name="submitbtn">Submit</button></a>
             </div>   
         </div>
     </main>
+
+    <!-- Linking the Html file with the Java Script file -->
     <script src="script.js" defer></script>
 </body>
 </html>
